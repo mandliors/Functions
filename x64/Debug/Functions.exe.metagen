@@ -1,0 +1,38 @@
+  LinearRegression.CustomForm.resources - Embedded, ContainedInManifestFile, 
+  LinearRegression.DataForm.resources - Embedded, ContainedInManifestFile, 
+  LinearRegression.Main.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Functions, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class LinearRegression.Function: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Label : Public
+    System.Collections.Generic.List`1[System.Drawing.PointF] Points : Public
+    System.Drawing.Color DrawColor : Public
+    Boolean Visible : Public
+  Methods:
+    ClearPoints(): PrivateScope, Public, HideBySig
+    AddPoint(PointF* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Draw(PaintEventArgs, Single): PrivateScope, Public, HideBySig
+Class LinearRegression.DataForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Collections.Generic.List`1[System.Drawing.PointF], System.Collections.Generic.List`1[LinearRegression.Function]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class LinearRegression.CustomForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Collections.Generic.List`1[LinearRegression.Function]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class LinearRegression.Main: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
